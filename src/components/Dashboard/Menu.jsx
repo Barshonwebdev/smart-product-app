@@ -24,6 +24,11 @@ const Menu = () => {
                   Add product
                 </button>
               </Link>
+              <Link to={"/"}>
+                <button className="hover:text-blue-800 hover:bg-white  px-16 py-2 rounded-lg text-white font-semibold">
+                  Back to home
+                </button>
+              </Link>
             </div>
           </div>
         </div>
