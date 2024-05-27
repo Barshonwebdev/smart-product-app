@@ -64,7 +64,7 @@ const Navbar = () => {
             <Link to={"/support"}>Support</Link>
           </li>
           <li>
-            <Link to={"/dashboardlayout/dashboard"}>Dashboard</Link>
+            <Link to={"/dashboardlayout/home"}>Dashboard</Link>
           </li>
         </ul>
       </div>

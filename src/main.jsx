@@ -11,12 +11,14 @@ import Homepage from './Pages/Homepage/Homepage';
 import Login from './AuthenticationRoutes/Login';
 import Register from './AuthenticationRoutes/Register';
 import AuthProvider from './providers/AuthProvider';
-import Dashboard from './Pages/Dashboard/Dashboard';
+import DashboardHome from './Pages/Dashboard/DashboardHome';
 import Explore from './Pages/Explore';
 import Support from './Pages/Support';
 import DashboardLayout from './Layouts/DashboardLayout';
 import Blogs from './Pages/Blogs';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import AllProducts from './Pages/Dashboard/AllProducts';
+import AddProduct from './Pages/Dashboard/AddProduct';
 
 const router = createBrowserRouter([
   {
@@ -54,9 +56,17 @@ const router = createBrowserRouter([
     element:<PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
     children:[
       {
-        path:'/dashboardlayout/dashboard',
-        element:<Dashboard></Dashboard>
-      }
+        path:'/dashboardlayout/home',
+        element:<DashboardHome></DashboardHome>
+      },
+      {
+        path:'/dashboardlayout/allproducts',
+        element:<AllProducts></AllProducts>
+      },
+      {
+        path:'/dashboardlayout/addproduct',
+        element:<AddProduct></AddProduct>
+      },
     ]
   }
 ]);
