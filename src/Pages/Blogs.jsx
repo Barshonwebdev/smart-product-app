@@ -1,13 +1,10 @@
-import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className=''>
-           <div className='text-3xl flex justify-center items-center min-h-screen'>
-            Blogs Coming soon!
-           </div>
+        <div className="min-h-screen flex justify-center items-center text-3xl">
+            Blogs coming soon!
         </div>
-    );
+    )
 };
 
 export default Blogs;
