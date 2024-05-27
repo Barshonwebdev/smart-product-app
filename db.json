@@ -1,14 +1,85 @@
 {
-    "posts": [
-      { "id": "1", "title": "a title", "views": 100 },
-      { "id": "2", "title": "another title", "views": 200 },
-      { "id": "3", "title": "another title", "views": 300 }
-    ],
-    "comments": [
-      { "id": "1", "text": "a comment about post 1", "postId": "1" },
-      { "id": "2", "text": "another comment about post 1", "postId": "1" }
-    ],
-    "profile": {
-      "name": "typicode"
+   "gadgets": [
+    {
+        "id": 1,
+        "name": "Wireless Keyboard",
+        "price": 29.99,
+        "description": "A sleek wireless keyboard with a long battery life and responsive keys.",
+        "availability": "yes",
+        "photo_url": "http://example.com/images/wireless_keyboard.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Gaming Mouse",
+        "price": 49.99,
+        "description": "An ergonomic gaming mouse with customizable buttons and RGB lighting.",
+        "availability": "yes",
+        "photo_url": "http://example.com/images/gaming_mouse.jpg"
+    },
+    {
+        "id": 3,
+        "name": "USB-C Hub",
+        "price": 19.99,
+        "description": "A compact USB-C hub with multiple ports including HDMI and USB 3.0.",
+        "availability": "no",
+        "photo_url": "http://example.com/images/usb_c_hub.jpg"
+    },
+    {
+        "id": 4,
+        "name": "External SSD",
+        "price": 99.99,
+        "description": "A high-speed external SSD with 1TB of storage capacity.",
+        "availability": "yes",
+        "photo_url": "http://example.com/images/external_ssd.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Bluetooth Speaker",
+        "price": 39.99,
+        "description": "A portable Bluetooth speaker with excellent sound quality and battery life.",
+        "availability": "yes",
+        "photo_url": "http://example.com/images/bluetooth_speaker.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Webcam",
+        "price": 59.99,
+        "description": "A high-definition webcam with autofocus and built-in microphone.",
+        "availability": "no",
+        "photo_url": "http://example.com/images/webcam.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Mechanical Keyboard",
+        "price": 79.99,
+        "description": "A mechanical keyboard with customizable RGB backlighting and tactile switches.",
+        "availability": "yes",
+        "photo_url": "http://example.com/images/mechanical_keyboard.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Noise Cancelling Headphones",
+        "price": 129.99,
+        "description": "Over-ear noise-cancelling headphones with superior sound quality and comfort.",
+        "availability": "yes",
+        "photo_url": "http://example.com/images/noise_cancelling_headphones.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Portable Monitor",
+        "price": 149.99,
+        "description": "A slim and lightweight portable monitor with a 15.6-inch display.",
+        "availability": "no",
+        "photo_url": "http://example.com/images/portable_monitor.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Wireless Charger",
+        "price": 24.99,
+        "description": "A fast wireless charger compatible with most smartphones.",
+        "availability": "yes",
+        "photo_url": "http://example.com/images/wireless_charger.jpg"
     }
+]
+
   }
