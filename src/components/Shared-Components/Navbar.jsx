@@ -39,7 +39,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="">
+      <div className="mr-4">
         <Link to={"/"} className="btn btn-ghost text-xl">
           Smart Product
         </Link>
