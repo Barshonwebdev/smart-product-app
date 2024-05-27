@@ -12,10 +12,10 @@ import Login from './AuthenticationRoutes/Login';
 import Register from './AuthenticationRoutes/Register';
 import AuthProvider from './providers/AuthProvider';
 import Dashboard from './Pages/Dashboard/Dashboard';
-import About from './Pages/About';
 import Explore from './Pages/Explore';
 import Support from './Pages/Support';
 import DashboardLayout from './Layouts/DashboardLayout';
+import Blogs from './Pages/Blogs';
 
 const router = createBrowserRouter([
   {
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
         element:<Register></Register>
       },
       {
-        path:'/about',
-        element:<About></About>
+        path:'/blogs',
+        element:<Blogs></Blogs>
       },
       {
         path:'/explore',
