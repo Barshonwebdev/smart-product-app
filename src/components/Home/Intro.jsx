@@ -4,10 +4,10 @@ const Intro = () => {
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row">
+        <div className="hero-content flex-col-reverse lg:flex-row">
          
           <div className="lg:mr-32">
-            <h1 className="text-5xl font-bold text-center">Smart Products</h1>
+            <h1 className="text-5xl font-bold text-center mt-5">Smart Products</h1>
             <p className="py-6 text-center">
               Welcome to Smart Products, your ultimate destination for the latest
               and greatest in tech innovations. Whether you're a tech
