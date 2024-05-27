@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
+  const {user,userLogout}=useAuth();
+  const handleLogout=()=>{
+    userLogout();
+  }
   return (
     <div className="navbar bg-base-100 flex items-center">
          
@@ -63,6 +68,13 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      {
+        user? <div className="absolute right-3">
+        <Link onClick={handleLogout}><button className="btn  bg-base-200 text-red-600 ">Logout</button></Link>
+      </div> : <div className="absolute right-3">
+        <Link  to={'/login'} ><button className="btn bg-red-600 text-white">Login</button></Link>
+      </div>
+      }
     </div>
   );
 };
