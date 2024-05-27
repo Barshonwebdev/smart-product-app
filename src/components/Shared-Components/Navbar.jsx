@@ -75,6 +75,9 @@ const Navbar = () => {
         <Link  to={'/login'} ><button className="btn bg-red-600 text-white">Login</button></Link>
       </div>
       }
+      <div>
+        <img className="w-5 absolute right-28 rounded-full" src={user.photoURL} alt="" />
+      </div>
     </div>
   );
 };
