@@ -44,7 +44,8 @@ const router = createBrowserRouter([
       },
       {
         path:'/explore',
-        element:<Explore></Explore>
+        element:<Explore></Explore>,
+        loader:()=>fetch('http://localhost:3000/gadgets')
       },
       {
         path:'/support',
