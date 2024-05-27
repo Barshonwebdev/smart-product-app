@@ -1,6 +1,7 @@
 import Banner from "../../components/Home/Banner";
 import Contact from "../../components/Home/Contact";
 import Intro from "../../components/Home/Intro";
+import Stat from "../../components/Home/Stat";
 
 const Homepage = () => {
     return (
@@ -8,6 +9,7 @@ const Homepage = () => {
             <Banner></Banner>
             <Intro></Intro>
             <Contact></Contact>
+            <Stat></Stat>
         </div>
     );
 };
