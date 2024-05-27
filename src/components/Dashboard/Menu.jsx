@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom';
 import UserInfo from './UserInfo';
 
 const Menu = () => {
@@ -11,6 +12,7 @@ const Menu = () => {
           </div>
           <div></div>
         </div>
+        <Outlet></Outlet>
         {/* user info  */}
         <UserInfo></UserInfo>
       </div>

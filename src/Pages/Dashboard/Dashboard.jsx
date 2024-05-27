@@ -1,16 +1,9 @@
-import Menu from "../../components/Dashboard/Menu";
+import useAuth from "../../hooks/useAuth";
 
 const Dashboard = () => {
-  
+  const {user}=useAuth();
   return (
-    <div>
-      <div className="bg-base-300 p-4">
-        <h1 className="text-center text-gray-600 text-3xl italic">
-          Welcome to the Dashboard
-        </h1>
-      </div>
-     <Menu></Menu>
-    </div>
+    <div className="flex justify-center font-semibold text-gray-400 items-center text-xl md:text-3xl my-10 md:mb-48">{user.displayName}&apos;s Dashboard</div>
   );
 };
 
