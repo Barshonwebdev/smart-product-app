@@ -16,6 +16,7 @@ import Explore from './Pages/Explore';
 import Support from './Pages/Support';
 import DashboardLayout from './Layouts/DashboardLayout';
 import Blogs from './Pages/Blogs';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -50,7 +51,7 @@ const router = createBrowserRouter([
   },
   {
     path:'/dashboardlayout',
-    element:<DashboardLayout></DashboardLayout>,
+    element:<PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
     children:[
       {
         path:'/dashboardlayout/dashboard',
