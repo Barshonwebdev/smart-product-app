@@ -1,7 +1,7 @@
 import React from "react";
 
 const SingleProduct = ({product}) => {
-    const{photo_url}=product;
+    const{photo_url,name,price,availability}=product;
   return (
     <div>
       <div className="card w-full lg:w-96 bg-base-100 shadow-xl">
@@ -13,9 +13,10 @@ const SingleProduct = ({product}) => {
           />
         </figure>
         <div className="card-body items-center text-center">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions lg:space-x-32">
+          <h2 className="card-title">{name}</h2>
+          <p>Price: ${price}</p>
+          <p>Available: {availability}</p>
+          <div className="card-actions lg:space-x-32 mt-3">
             <button className="btn btn-primary">Details</button>
             <button className="btn btn-primary">Buy Now</button>
           </div>
