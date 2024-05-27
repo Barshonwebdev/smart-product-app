@@ -11,7 +11,7 @@ const Dashboard = () => {
         </h1>
       </div>
       <div className="flex justify-between flex-col-reverse md:flex-row">
-        <div className="flex flex-col-reverse md:flex-row justify-between ">
+        <div className="">
           <div className=" min-h-44 md:min-h-screen min-w-64 rounded text-white bg-blue-600">
             <div className="mt-2 text-center">
               <p className="text-lg">Dashboard Options</p>
