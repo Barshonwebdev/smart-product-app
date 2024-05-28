@@ -21,6 +21,7 @@ import AllProducts from './Pages/Dashboard/AllProducts';
 import AddProduct from './Pages/Dashboard/AddProduct';
 import ErrorPage from './Pages/ErrorPage';
 import ProductDetails from './Pages/ProductDetails';
+import EditProduct from './Pages/Dashboard/EditProduct';
 
 const router = createBrowserRouter([
   {
@@ -77,6 +78,11 @@ const router = createBrowserRouter([
       {
         path:'/dashboardlayout/addproduct',
         element:<AddProduct></AddProduct>
+      },
+      {
+        path:'/dashboardlayout/editproduct/:id',
+        element:<EditProduct></EditProduct>,
+        loader:({params})=>fetch(`http://localhost:3000/gadgets/${params.id}`)
       },
     ]
   }
