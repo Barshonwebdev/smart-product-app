@@ -21,7 +21,7 @@ const SingleProduct = ({product,isDashboard}) => {
           .then((data)=>{
             Swal.fire({
               title: "Deleted!",
-              text: "Your file has been deleted.",
+              text: "Product has been deleted.",
               icon: "success"
             });
           })

@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 
 const AddProduct = () => {
-    const handleAddProduct=async(e)=>{
+    const handleAddProduct=(e)=>{
         e.preventDefault();
         const form=e.target;
         const id=form.id.value;
@@ -16,19 +16,32 @@ const AddProduct = () => {
         const productData={id,name,brand,price,description,availability,photo_url,details}
         console.log(productData);
 
-        await fetch('http://localhost:3000/gadgets',{
-            method:"POST",
-            headers:{
-                'Content-type':'application/json',
-            },
-            body:JSON.stringify(productData),
-        })
-        .then((res)=>res.json())
-        .then(data=>{
-            console.log(data);
-            Swal.fire("New Product Added!!");
-            form.reset();
-        })
+        Swal.fire({
+            title: "Are you sure?",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, add product!"
+          }).then((result) => {
+            if (result.isConfirmed) {
+                fetch('http://localhost:3000/gadgets',{
+                    method:"POST",
+                    headers:{
+                        'Content-type':'application/json',
+                    },
+                    body:JSON.stringify(productData),
+                })
+                .then((res)=>res.json())
+                .then(data=>{
+                    console.log(data);
+                    Swal.fire("New Product Added!!");
+                    form.reset();
+                })
+            }
+          });
+
+         
     }
   return (
     <div>
