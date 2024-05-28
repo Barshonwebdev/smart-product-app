@@ -22,8 +22,8 @@ const SingleProduct = ({product,isDashboard}) => {
             <Link to={`/productdetails/${id}`}><button className="btn btn-primary">Details</button></Link>
             {
               isDashboard && <div className="space-x-5">
-              <button className="btn btn-warning">Edit</button>
-              <button className="btn btn-error">Delete</button>
+              <button className="btn bg-amber-600 text-white">Edit</button>
+              <button className="btn bg-red-600 text-white">Delete</button>
               </div>
             }
           </div>
