@@ -1,19 +1,34 @@
-import React from "react";
 
 const AddProduct = () => {
+    const handleAddProduct=(e)=>{
+        e.preventDefault();
+        const form=e.target;
+        const id=form.id.value;
+        const name=form.name.value;
+        const brand=form.brand.value;
+        const price=form.price.value;
+        const description=form.description.value;
+        const availability=form.availability.value;
+        const photoURL=form.photoURL.value;
+        const details=form.details.value;
+
+        const productData={id,name,brand,price,description,availability,photoURL,details}
+        console.log(productData);
+    }
   return (
     <div>
       <h1 className="my-3 text-2xl text-gray-500 text-center"> Add a product</h1>
       <div className="hero  ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form className="card-body grid grid-cols-2 gap-x-10">
+            <form onSubmit={handleAddProduct} className="card-body grid grid-cols-2 gap-x-10">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">ID</span>
                 </label>
                 <input
                   type="text"
+                  name="id"
                   placeholder="id"
                   className="input input-bordered"
                   required
@@ -25,6 +40,7 @@ const AddProduct = () => {
                 </label>
                 <input
                   type="text"
+                  name="name"
                   placeholder="name"
                   className="input input-bordered"
                   required
@@ -36,6 +52,7 @@ const AddProduct = () => {
                 </label>
                 <input
                   type="text"
+                  name="brand"
                   placeholder="brand"
                   className="input input-bordered"
                   required
@@ -47,6 +64,7 @@ const AddProduct = () => {
                 </label>
                 <input
                   type="number"
+                  name="price"
                   placeholder="price"
                   className="input input-bordered"
                   required
@@ -58,6 +76,7 @@ const AddProduct = () => {
                 </label>
                 <input
                   type="text"
+                  name="description"
                   placeholder="description"
                   className="input input-bordered"
                   required
@@ -69,6 +88,7 @@ const AddProduct = () => {
                 </label>
                 <input
                   type="text"
+                  name="availability"
                   placeholder="yes/no"
                   className="input input-bordered"
                   required
@@ -80,6 +100,7 @@ const AddProduct = () => {
                 </label>
                 <input
                   type="text"
+                  name="photoURL"
                   placeholder="photo url"
                   className="input input-bordered"
                   required
@@ -91,6 +112,7 @@ const AddProduct = () => {
                 </label>
                 <input
                   type="text"
+                  name="details"
                   placeholder="details"
                   className="input input-bordered"
                   required
