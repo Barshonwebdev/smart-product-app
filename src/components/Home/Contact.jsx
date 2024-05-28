@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = () => { 
   return (
     <div className="mt-20">
       <div className="hero bg-base-200">

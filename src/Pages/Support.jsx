@@ -1,9 +1,10 @@
+import Contact from "../components/Home/Contact";
 
 const Support = () => {
     return (
         <div className=''>
-           <div className='text-3xl flex justify-center items-center min-h-screen'>
-            Support Features Coming soon!
+           <div className='text-lg flex justify-center items-center '>
+            <Contact></Contact>
            </div>
         </div>
     );
