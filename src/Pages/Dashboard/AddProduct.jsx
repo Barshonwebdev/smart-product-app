@@ -47,7 +47,7 @@ const AddProduct = () => {
     <div>
       <h1 className="my-3 text-2xl text-gray-500 text-center"> Add a product</h1>
       <div className="hero  ">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero-content  flex-col lg:flex-row-reverse">
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form onSubmit={handleAddProduct} className="card-body grid grid-cols-2 gap-x-10">
               <div className="form-control">
@@ -98,7 +98,7 @@ const AddProduct = () => {
                   required
                 />
               </div>
-              <div className="form-control">
+              <div className="form-control col-span-2">
                 <label className="label">
                   <span className="label-text">Description</span>
                 </label>
@@ -134,7 +134,7 @@ const AddProduct = () => {
                   required
                 />
               </div>
-              <div className="form-control">
+              <div className="form-control col-span-2">
                 <label className="label">
                   <span className="label-text">Details</span>
                 </label>
