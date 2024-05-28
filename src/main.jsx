@@ -20,6 +20,7 @@ import PrivateRoute from './PrivateRoute/PrivateRoute';
 import AllProducts from './Pages/Dashboard/AllProducts';
 import AddProduct from './Pages/Dashboard/AddProduct';
 import ErrorPage from './Pages/ErrorPage';
+import ProductDetails from './Pages/ProductDetails';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
         path:'/',
         element:<Homepage></Homepage>,
         loader:()=>fetch('http://localhost:3000/gadgets')
+      },
+      {
+        path:'/productdetails/:id',
+        element: <ProductDetails></ProductDetails> ,
+        loader:({params})=>fetch(`http://localhost:3000/gadgets/${params.id}`)
       },
       {
         path:'/login',

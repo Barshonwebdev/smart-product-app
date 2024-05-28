@@ -1,4 +1,3 @@
-import React from 'react';
 import SingleProduct from '../Products/SingleProduct';
 
 const Featured = ({gadgets}) => {
