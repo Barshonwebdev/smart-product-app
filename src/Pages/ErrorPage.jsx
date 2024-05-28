@@ -6,7 +6,7 @@ const ErrorPage = () => {
        <div>
         <Navbar></Navbar>
          <div className='min-h-screen flex justify-center items-center'>
-            <img className='w-1/2' src={errorpage} alt="" />
+            <img className='md:w-1/2' src={errorpage} alt="" />
         </div>
        </div>
     );
