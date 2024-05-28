@@ -1,7 +1,35 @@
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const SingleProduct = ({product,isDashboard}) => {
     const{id,photo_url,name,price,availability,brand,description}=product;
+    const handleDelete=()=>{
+      Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!"
+      }).then((result) => {
+        if (result.isConfirmed) {
+           fetch(`http://localhost:3000/gadgets/${id}`,{
+            method:"DELETE",
+          })
+          .then((res)=>res.json())
+          .then((data)=>{
+            Swal.fire({
+              title: "Deleted!",
+              text: "Your file has been deleted.",
+              icon: "success"
+            });
+          })
+          
+        }
+      });
+     
+    }
   return (
     <div>
       <div className="card w-full lg:w-96 bg-base-100 shadow-xl">
@@ -22,8 +50,8 @@ const SingleProduct = ({product,isDashboard}) => {
             <Link to={`/productdetails/${id}`}><button className="btn btn-primary">Details</button></Link>
             {
               isDashboard && <div className="space-x-5">
-              <button className="btn bg-amber-600 text-white">Edit</button>
-              <button className="btn bg-red-600 text-white">Delete</button>
+              <button className="btn bg-amber-600 hover:bg-amber-800 text-white">Edit</button>
+              <button onClick={handleDelete} className="btn bg-red-600 hover:bg-red-800 text-white">Delete</button>
               </div>
             }
           </div>

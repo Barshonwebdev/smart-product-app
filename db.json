@@ -99,16 +99,6 @@
       "availability": "yes",
       "photo_url": "https://img.freepik.com/free-photo/usb-charging-gadgets-blurred-background-room-close-up-concept-technology-everyday-life_169016-15480.jpg?t=st=1716841851~exp=1716845451~hmac=618066cdec6c648681f6a132b8ef3eb93d24921cf0b810c54839097072b62b30&w=826",
       "details": "The Dell Ultra-High Charger provides rapid charging for most smartphones, ensuring your devices are always ready. Its compact and durable design makes it perfect for home, office, or travel. Experience efficient and reliable power delivery with this essential tech accessory."
-    },
-    {
-      "id": "11",
-      "name": "Smart Watch",
-      "brand": "Apple",
-      "price": "222",
-      "description": "A sleek smart watch with fitness tracking, notifications, and customizable watch faces.",
-      "availability": "yes",
-      "photo_url": "https://img.freepik.com/free-photo/rendering-smart-home-device_23-2151039302.jpg?t=st=1716888828~exp=1716892428~hmac=9fa9325cd07b82d83791d18ccd26837a1e0d3410065535b279c8feb926198dcc&w=826",
-      "details": "The Apple Smart Watch combines style and functionality, offering fitness tracking, notifications, and customizable watch faces. Its advanced features and sleek design make it a must-have accessory for staying connected and maintaining a healthy lifestyle. Ideal for tech enthusiasts and fitness buffs."
     }
   ]
 }
