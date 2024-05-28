@@ -95,7 +95,7 @@ const Blogs = () => {
             <div className="collapse-title text-2xl font-medium">
               Sony Noise Cancelling Earbuds: Superior Sound on the Go
             </div>
-            <div className="mx-4 space-y-3 text-lg">
+            <div className="mx-4 space-y-3 text-lg"> 
               <p>
                 Experience exceptional audio quality with Sony's Noise
                 Cancelling Earbuds, priced at $199.99. These wireless earbuds
