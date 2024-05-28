@@ -4,11 +4,11 @@
       "id": "1",
       "name": "Wireless Keyboard",
       "brand": "A4tech",
-      "price": 29.99,
+      "price": "29.99",
       "description": "A sleek wireless keyboard with a long battery life and responsive keys.",
       "availability": "yes",
       "photo_url": "https://img.freepik.com/free-photo/ar-keyboard-hologram-neon-green-smart-technology-device_53876-165520.jpg?t=st=1716840168~exp=1716843768~hmac=27c6d08fcb321b3505f93de8f1ad8e6483e779619ef79cb0b6ce2c4f45351fa9&w=826",
-      "details": "This wireless keyboard by A4tech offers an ergonomic design with low-profile keys, ensuring comfortable typing. Its long-lasting battery supports extensive use without frequent recharges. Ideal for both office and home setups, it connects seamlessly to multiple devices, providing a clutter-free workspace."
+      "details": "This wireless keyboard by A4tech offers an ergonomic design along with low-profile keys, ensuring comfortable typing. Its long-lasting battery supports extensive use without frequent recharges. Ideal for both office and home setups, it connects seamlessly to multiple devices, providing a clutter-free workspace."
     },
     {
       "id": "2",
