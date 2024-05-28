@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const SingleProduct = ({product,isDashboard}) => {
+const SingleProduct = ({product,isDashboard,onDelete}) => {
     const{id,photo_url,name,price,availability,brand,description}=product;
     const handleDelete=()=>{
       Swal.fire({
@@ -24,6 +24,7 @@ const SingleProduct = ({product,isDashboard}) => {
               text: "Product has been deleted.",
               icon: "success"
             });
+            onDelete(id);
           })
           
         }

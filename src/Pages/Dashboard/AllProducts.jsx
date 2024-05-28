@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import SingleProduct from "../../components/Products/SingleProduct";
 
 const AllProducts = () => {
   const products = useLoaderData();
+  const [allproducts,setAllproducts]=useState(products);
+
+  const handleDeleteInstant=(id)=>{
+    setAllproducts(allproducts.filter((product)=>product.id!==id));
+  }
+
   return (
     <div>
       <div>
@@ -11,7 +17,7 @@ const AllProducts = () => {
       </div>
       <div className="flex flex-wrap gap-10 ml-5">
         {
-            products.map(product=><SingleProduct isDashboard={true} product={product} key={product.id}></SingleProduct>)
+            allproducts.map(product=><SingleProduct onDelete={handleDeleteInstant} isDashboard={true} product={product} key={product.id}></SingleProduct>)
         }
       </div>
     </div>
