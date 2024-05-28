@@ -19,11 +19,13 @@ import Blogs from './Pages/Blogs';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import AllProducts from './Pages/Dashboard/AllProducts';
 import AddProduct from './Pages/Dashboard/AddProduct';
+import ErrorPage from './Pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main> ,
+    errorElement: <ErrorPage></ErrorPage>,
     children:[
       {
         path:'/',
