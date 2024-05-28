@@ -11,7 +11,7 @@ const FAQ = () => {
             <div className="collapse-title text-xl font-medium">
               What types of gadgets do you offer?
             </div>
-            <div className="collapse-content">
+            <div className="collapse-content"> 
               <p>
                 We offer smartphones, laptops, tablets, wearables, smart home
                 devices, gaming gadgets, and audio-visual equipment.
