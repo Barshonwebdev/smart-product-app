@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 
 const AddProduct = () => {
     const handleAddProduct=async(e)=>{
@@ -25,7 +26,7 @@ const AddProduct = () => {
         .then((res)=>res.json())
         .then(data=>{
             console.log(data);
-            alert('product added');
+            Swal.fire("New Product Added!!");
             form.reset();
         })
     }
