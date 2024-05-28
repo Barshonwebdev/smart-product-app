@@ -1,7 +1,7 @@
 {
   "gadgets": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Wireless Keyboard",
       "brand": "A4tech",
       "price": 29.99,
@@ -11,7 +11,7 @@
       "details": "This wireless keyboard by A4tech offers an ergonomic design with low-profile keys, ensuring comfortable typing. Its long-lasting battery supports extensive use without frequent recharges. Ideal for both office and home setups, it connects seamlessly to multiple devices, providing a clutter-free workspace."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Gaming Mouse",
       "brand": "Logitech",
       "price": 49.99,
@@ -21,7 +21,7 @@
       "details": "The Logitech Gaming Mouse offers precision and comfort with its ergonomic design. Equipped with customizable buttons, it allows gamers to tailor their setup for optimal performance. The vibrant RGB lighting enhances the gaming experience, making it a stylish and functional addition to any setup."
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "USB-C Hub",
       "brand": "Ohio",
       "price": 19.99,
@@ -31,7 +31,7 @@
       "details": "Ohio's USB-C Hub expands connectivity options for your devices. This compact accessory includes HDMI and multiple USB 3.0 ports, facilitating seamless data transfer and display connections. Ideal for professionals and travelers, it ensures you stay connected and productive wherever you are."
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "External SSD",
       "brand": "Asus",
       "price": 99.99,
@@ -41,7 +41,7 @@
       "details": "The Asus External SSD offers 1TB of high-speed storage, perfect for storing large files and applications. Its robust design ensures durability, while the rapid data transfer rates enhance productivity. Ideal for both personal and professional use, it provides reliable performance on the go."
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Bluetooth Speaker",
       "brand": "Microlab",
       "price": 39.99,
@@ -51,17 +51,17 @@
       "details": "Microlab's Bluetooth Speaker delivers impressive sound quality and long-lasting battery life. Its portable design makes it easy to carry, perfect for outdoor activities and travel. With robust connectivity options, it ensures seamless streaming from various devices, enhancing your audio experience."
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Webcam",
       "brand": "Samsung",
-      "price": 59.99,
+      "price": "59.99",
       "description": "A high-definition webcam with autofocus and built-in microphone.",
-      "availability": "no",
+      "availability": "yes",
       "photo_url": "https://img.freepik.com/free-photo/view-round-modern-webcam-with-copy-space_23-2150808003.jpg?t=st=1716841622~exp=1716845222~hmac=2dfcf4dc73e01f2be79d80e3882350e0c5411e9c354d669e02771b9cf91aed7e&w=826",
       "details": "The Samsung Webcam offers high-definition video quality, perfect for virtual meetings and streaming. It features autofocus and a built-in microphone for clear audio-visual communication. Its sleek design and easy setup make it an excellent choice for both professional and personal use."
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Mechanical Keyboard",
       "brand": "Dareu",
       "price": 79.99,
@@ -71,7 +71,7 @@
       "details": "The Dareu Mechanical Keyboard provides a premium typing experience with tactile switches and customizable RGB backlighting. It's designed for durability and comfort, making it ideal for gamers and professionals alike. Enhance your setup with this stylish and functional keyboard."
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Noise Cancelling Headphones",
       "brand": "Ziggy",
       "price": 129.99,
@@ -81,7 +81,7 @@
       "details": "Ziggy's Noise Cancelling Headphones offer superior sound quality and comfort. Their over-ear design and advanced noise-cancelling technology create an immersive listening experience. Perfect for travel or home use, they provide long-lasting comfort with exceptional audio clarity."
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Portable Monitor",
       "brand": "Gigabyte",
       "price": 149.99,
@@ -91,7 +91,7 @@
       "details": "Gigabyte's Portable Monitor features a 15.6-inch display, providing vibrant visuals in a slim, lightweight design. It's ideal for professionals needing extra screen space on the go. With easy connectivity and a sleek profile, it enhances productivity wherever you work."
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Ultra-High Charger",
       "brand": "Dell",
       "price": 24.99,

@@ -1,8 +1,19 @@
+import { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const EditProduct = () => {
     const product=useLoaderData();
+
+    const[id,setId]=useState(product.id);
+    const[name,setName]=useState(product.name);
+    const[brand,setBrand]=useState(product.brand);
+    const[price,setPrice]=useState(product.price);
+    const[description,setDescription]=useState(product.description);
+    const[availability,setAvailability]=useState(product.availability);
+    const[photo_url,setPhoto_url]=useState(product.photo_url);
+    const[details,setDetails]=useState(product.details);
+
     console.log(product);
     const handleEditProduct=(e)=>{
         e.preventDefault();
@@ -28,8 +39,8 @@ const EditProduct = () => {
             confirmButtonText: "Yes, Edit Product!"
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch('http://localhost:3000/gadgets',{
-                    method:"POST",
+                fetch(`http://localhost:3000/gadgets/${product.id}`,{
+                    method:"PATCH",
                     headers:{
                         'Content-type':'application/json',
                     },
@@ -60,6 +71,8 @@ const EditProduct = () => {
                       name="id"
                       placeholder="id"
                       className="input input-bordered"
+                      value={id}
+                      onChange={(e)=>setId(e.target.value)}
                       required
                     />
                   </div>
@@ -72,6 +85,8 @@ const EditProduct = () => {
                       name="name"
                       placeholder="name"
                       className="input input-bordered"
+                      value={name}
+                      onChange={(e)=>setName(e.target.value)}
                       required
                     />
                   </div>
@@ -84,6 +99,8 @@ const EditProduct = () => {
                       name="brand"
                       placeholder="brand"
                       className="input input-bordered"
+                      value={brand}
+                      onChange={(e)=>setBrand(e.target.value)}
                       required
                     />
                   </div>
@@ -96,6 +113,8 @@ const EditProduct = () => {
                       name="price"
                       placeholder="price"
                       className="input input-bordered"
+                      value={price}
+                      onChange={(e)=>setPrice(e.target.value)}
                       required
                     />
                   </div>
@@ -108,6 +127,8 @@ const EditProduct = () => {
                       name="description"
                       placeholder="description"
                       className="input input-bordered"
+                      value={description}
+                      onChange={(e)=>setDescription(e.target.value)}
                       required
                     />
                   </div>
@@ -120,6 +141,8 @@ const EditProduct = () => {
                       name="availability"
                       placeholder="yes/no"
                       className="input input-bordered"
+                      value={availability}
+                      onChange={(e)=>setAvailability(e.target.value)}
                       required
                     />
                   </div>
@@ -132,6 +155,8 @@ const EditProduct = () => {
                       name="photo_url"
                       placeholder="photo url"
                       className="input input-bordered"
+                      value={photo_url}
+                      onChange={(e)=>setPhoto_url(e.target.value)}
                       required
                     />
                   </div>
@@ -144,6 +169,8 @@ const EditProduct = () => {
                       name="details"
                       placeholder="details"
                       className="input input-bordered"
+                      value={details}
+                      onChange={(e)=>setDetails(e.target.value)}
                       required
                     />
                   </div>
