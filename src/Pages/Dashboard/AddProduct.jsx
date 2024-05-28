@@ -1,6 +1,6 @@
 
 const AddProduct = () => {
-    const handleAddProduct=(e)=>{
+    const handleAddProduct=async(e)=>{
         e.preventDefault();
         const form=e.target;
         const id=form.id.value;
@@ -9,11 +9,25 @@ const AddProduct = () => {
         const price=form.price.value;
         const description=form.description.value;
         const availability=form.availability.value;
-        const photoURL=form.photoURL.value;
+        const photo_url=form.photo_url.value;
         const details=form.details.value;
 
-        const productData={id,name,brand,price,description,availability,photoURL,details}
+        const productData={id,name,brand,price,description,availability,photo_url,details}
         console.log(productData);
+
+        await fetch('http://localhost:3000/gadgets',{
+            method:"POST",
+            headers:{
+                'Content-type':'application/json',
+            },
+            body:JSON.stringify(productData),
+        })
+        .then((res)=>res.json())
+        .then(data=>{
+            console.log(data);
+            alert('product added');
+            form.reset();
+        })
     }
   return (
     <div>
@@ -100,7 +114,7 @@ const AddProduct = () => {
                 </label>
                 <input
                   type="text"
-                  name="photoURL"
+                  name="photo_url"
                   placeholder="photo url"
                   className="input input-bordered"
                   required
