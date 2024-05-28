@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const SingleProduct = ({product}) => {
+const SingleProduct = ({product,isDashboard}) => {
     const{id,photo_url,name,price,availability,brand,description}=product;
   return (
     <div>
@@ -19,7 +19,13 @@ const SingleProduct = ({product}) => {
           <p>Available: {availability}</p>
           <p className="my-2">{description}</p>
           <div className="card-actions flex justify-between mt-5">
-            <Link to={`/productdetails/${id}`}><button className="btn btn-primary">Product Details</button></Link>
+            <Link to={`/productdetails/${id}`}><button className="btn btn-primary">Details</button></Link>
+            {
+              isDashboard && <div className="space-x-5">
+              <button className="btn btn-warning">Edit</button>
+              <button className="btn btn-error">Delete</button>
+              </div>
+            }
           </div>
         </div>
       </div>
