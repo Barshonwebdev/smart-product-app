@@ -3,7 +3,7 @@ import React from "react";
 const AddProduct = () => {
   return (
     <div>
-      <h1 className="my-5 text-2xl text-gray-500 text-center"> Add a product</h1>
+      <h1 className="my-3 text-2xl text-gray-500 text-center"> Add a product</h1>
       <div className="hero  ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
