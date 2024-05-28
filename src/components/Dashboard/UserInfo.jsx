@@ -4,7 +4,7 @@ const UserInfo = () => {
     const { user } = useAuth();
   const { displayName, email, photoURL, emailVerified } = user;
     return (
-        <div className="card  bg-base-100 shadow-xl my-3 md:my-0 me-3 ">
+        <div className="card max-h-screen  bg-base-100 shadow-xl my-3 md:my-0 me-3 ">
           <h1 className="text-2xl text-center text-gray-600 md:mt-3">
             User Information
           </h1>
