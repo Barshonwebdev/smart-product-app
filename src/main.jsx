@@ -71,7 +71,8 @@ const router = createBrowserRouter([
       },
       {
         path:'/dashboardlayout/allproducts',
-        element:<AllProducts></AllProducts>
+        element:<AllProducts></AllProducts>,
+        loader:()=>fetch('http://localhost:3000/gadgets')
       },
       {
         path:'/dashboardlayout/addproduct',
