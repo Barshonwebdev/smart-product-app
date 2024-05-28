@@ -3,7 +3,7 @@ import UserInfo from "./UserInfo";
 
 const Menu = () => {
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex justify-between flex-col md:flex-row">
       <div className="">
         <div className=" min-h-72 md:min-h-screen min-w-64 rounded text-white bg-blue-600">
           <div className=" text-center">

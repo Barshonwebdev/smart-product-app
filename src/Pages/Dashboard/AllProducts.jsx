@@ -9,7 +9,7 @@ const AllProducts = () => {
       <div>
         <h1 className="text-center my-5 text-2xl text-gray-500"> All products</h1>
       </div>
-      <div className="flex flex-wrap gap-10">
+      <div className="flex flex-wrap gap-10 ml-5">
         {
             products.map(product=><SingleProduct product={product} key={product.id}></SingleProduct>)
         }
